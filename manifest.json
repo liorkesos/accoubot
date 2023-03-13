@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Yoohoo Alert",
+    "version": "1.0",
+    "description": "Displays an alert saying Yoohoo when you visit Google.",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://secapp.taxes.gov.il/shdochshana1301/frmTofes1301_2018.aspx/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}
